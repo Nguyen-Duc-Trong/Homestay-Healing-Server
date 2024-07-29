@@ -1,11 +1,11 @@
 import express from 'express'
-import cors from "cors"
+// import cors from "cors"
 require('dotenv').config()
 import initRouter from './src/routers'
 import connectDatabase from './src/config/connectDatabase.js'
 
-const cors = require('cors')
-const app = express()
+const cors = require('cors');
+const app = express();
 app.use(cors({
     origin: process.env.CLIENT_URL,
     methods: ['POST', 'GET', 'PUT', 'DELETE']
