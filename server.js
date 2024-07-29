@@ -4,6 +4,7 @@ require('dotenv').config()
 import initRouter from './src/routers'
 import connectDatabase from './src/config/connectDatabase.js'
 
+const cors = require('cors')
 const app = express()
 app.use(cors({
     origin: process.env.CLIENT_URL,
