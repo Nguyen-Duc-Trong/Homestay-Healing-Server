@@ -22,10 +22,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       created: {
-        type: Sequelize.DATE
+        type: Sequelize.STRING
       },
       expire: {
-        type: Sequelize.DATE
+        type: Sequelize.STRING
       },
       bonus: {
         type: Sequelize.STRING
