@@ -8,8 +8,9 @@ const cors = require('cors');
 const app = express();
 app.use(cors({
     // origin: process.env.CLIENT_URL,
-    // methods: ['POST', 'GET', 'PUT', 'DELETE']
-    origin: 'https://homestay-healing-client.vercel.app/'
+    origin: '*',
+    methods: ['POST', 'GET', 'PUT', 'DELETE']
+    // origin: 'https://homestay-healing-client.vercel.app/'
 }))
 
 //Đọc API từ Client gửi lên
