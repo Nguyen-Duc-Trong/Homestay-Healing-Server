@@ -5,16 +5,16 @@ import initRouter from './src/routers'
 import connectDatabase from './src/config/connectDatabase.js'
 
 const cors = require('cors');
+const allowedOrigins = [
+    'https://homestay-healing-client.vercel.app',
+    'https://homestay-healing-client-ix4yyon0p-trongs-projects-85539a30.vercel.app'
+];
 const app = express();
 // app.use(cors({
 //     // origin: process.env.CLIENT_URL,
 //     // methods: ['POST', 'GET', 'PUT', 'DELETE']
 //     origin: 'https://homestay-healing-client.vercel.app/'
 // }))
-const allowedOrigins = [
-    'https://homestay-healing-client.vercel.app',
-    'https://homestay-healing-client-ix4yyon0p-trongs-projects-85539a30.vercel.app'
-];
 
 app.use(cors({
     origin: (origin, callback) => {
