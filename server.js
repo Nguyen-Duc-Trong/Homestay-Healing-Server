@@ -7,9 +7,9 @@ import connectDatabase from './src/config/connectDatabase.js'
 const cors = require('cors');
 const app = express();
 app.use(cors({
-    origin: process.env.CLIENT_URL,
-    methods: ['POST', 'GET', 'PUT', 'DELETE']
-    // origin: 'https://homestay-healing-client.vercel.app/'
+    // origin: process.env.CLIENT_URL,
+    // methods: ['POST', 'GET', 'PUT', 'DELETE']
+    origin: 'https://homestay-healing-client.vercel.app/'
 }))
 //Đọc API từ Client gửi lên
 app.use(express.json())
